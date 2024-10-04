@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="Ar">
+<head>  <link rel="icon" type="image/x-icon" href="logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>النقل</title>
+    
+</head>
+<style>
+    ::-webkit-scrollbar{
+        width: 20px;
+      }
+      
+      ::-webkit-scrollbar-track{
+        background: #62077e;
+      }
+      
+      ::-webkit-scrollbar-thumb{
+        
+        background: #8708ad;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover{
+        background: #56056e;
+      }
+      
+      body{
+        padding: 5px;
+      background-color: #1c1c1c;
+      }
+      
+    
+    .head{
+        height: 25%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        right: 0%;
+        background-color: #ffffff;
+        
+    }
+    h1{
+        color: #56056e;
+    }
+    button{
+        border-bottom: 5px #1c1c1c solid;
+        
+        width: 100%;
+    }
+    button:hover{
+        background-color: rgb(211, 191, 211);
+    }
+    .se{
+        width: 50%;
+        height: 25%;
+        position: absolute;
+        left: 24.5%;
+        top: 10%;
+        background-color: #56056e;
+        color: #ffffff;
+    
+        border: 0.1cm #810ba5 solid;
+    
+    }
+    
+    .rli{
+      width: 25%;
+      position: absolute;
+      right: 0%;
+      top: 26%;
+
+      background-color: aliceblue;
+    }
+    
+    .sb{
+        width: 2cm;
+        height: 25%;
+        position: absolute;
+        left: 18%;
+        top: 10%;
+        background-color: #56056e;
+        color: #ffffff;
+    }
+    
+    .sb:hover{
+        background-color: #7e2979;
+    }
+    
+    p{
+      margin-right: 10px;
+      margin-left: 10px;
+      
+    }
+    
+    .pa{
+            height: auto;
+      width: 65%;
+      position: absolute;
+      top: 30%;
+      left: 0%;
+
+      margin-left: 5%;
+      border-radius: 1cm;
+      background-color: #2a2a2b;
+}
+    
+    a{
+      color: #da6fd2;
+    }
+    
+    .address{
+    position: absolute;
+      top: 10px;
+      right: 5px;
+    
+    }
+
+.con{
+  width: 40px;
+  height: 40px;
+  
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  display: none;
+}
+.one{
+  width: 85%;
+  height: 3px;
+  border: 1px  #8708ad solid;
+  border-radius: 20%;
+  background-color:  #8708ad;
+  margin-top: 10%;
+}
+
+.one:hover{
+  background-color: #56056e;
+}
+
+
+
+              .two{
+  width: 85%;
+  height: 3px;
+  border: 1px  #ffffff solid;
+  border-radius: 20%;
+  background-color:  #fdfdfd;
+  margin-top: 10%;
+
+}
+
+.first{
+  background-color: rgb(211, 191, 211);
+}
+.first:hover{
+  background-color: rgb(211, 191, 211);
+}
+img{
+  width: 99%;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+    @media screen and (max-width:400px){
+     
+      .rli{
+                position: fixed;
+                right: 35%;
+                top: 1%;
+               
+                height: 100%;
+                width: 0px;
+                background-color: #56056e;
+                z-index: 1;
+                padding-top: 40px;
+                overflow: scroll;
+                display: block;
+                transition: all 0.3s;
+              }
+     
+     
+      button{
+        border: 0cm;
+        margin-bottom: 2.5px;
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+    }
+
+
+    .con{
+      display: block;
+    }
+    .pa{
+      height: auto;
+      width: 90%;
+      margin-top: 0%;
+      margin-left: 5%;
+      border-radius: 1cm;
+      background-color: #2a2a2b;
+}
+
+    }
+
+
+
+    
+    @media screen and (min-width:401px){
+       
+    .pa{
+            height: auto;
+      width: 65%;
+      position: absolute;
+      top: 30%;
+      left: 0%;
+
+      margin-left: 5%;
+      border-radius: 1cm;
+      background-color: #2a2a2b;
+}
+button{
+        border-bottom: 5px #1c1c1c solid;
+        
+        width: 100%;
+    }
+    }
+
+
+
+
+
+
+    </style>
+
+<body dir="rtl">
+
+<div class="head">
+    <font size="6" face="Arial" color="#56056e">
+    <label class="address">جهود الدوله فى <br>النقل</label>
+
+      <div class="con" onclick="openFunction()">
+        <div class="one" onclick="openFunction()"></div>
+        <div class="one" onclick="openFunction()"></div>
+        <div class="one" onclick="openFunction()"></div>
+      </div>
+
+
+ </font>
+</div>
+
+<div class="rli" id="rli">
+  <div class="con" onclick="closeFunction()">
+    <div class="two" onclick="closeFunction()"></div>
+    <div class="two" onclick="closeFunction()"></div>
+    <div class="two" onclick="closeFunction()"></div>
+  </div>
+    
+    <a href="index.html"><button><h1>الصفحه الرئيسيه</h1></button></a><br>   
+    
+    <a href="التعامل فى الازدحام الحضرى.html"><button><h1>جهود الدوله فى التعامل مع الازدحام الحضرى</h1></button></a><br>
+    <a href="تحسين استخدام الطاقه البديله.html"><button><h1>تحسين استخدام الطاقه البديله</h1></button></a><br>
+    <a href="الاحياء الريفى المصرى.html"><button><h1>الاحياء الريفى المصرى</h1></button></a><br>
+    
+    <a href="معالجه وتقليل التلوث.html"><button><h1>معالجه وتقليل التلوث</h1></button></a><br>
+    <a href="التضامن الاجتماعى.html"><button><h1>التضامن الاجتماعى</h1></button></a><br>
+    <a href="التغيرات المناخيه.html"><button><h1>التغيرات المناخيه</h1></button></a><br>
+    <a href="قطاع الكهرباء.html"><button><h1>قطاع الكهرباء</h1></button></a><br>
+
+    
+    <a href="البترول.html"><button><h1>قطاع البترول</h1></button></a><br>
+    <a href="الصحه.html"><button><h1>الصحه</h1></button></a><br>
+    <a href="تكافل وكرامه.html"><button><h1>كفاله وكرامه</h1></a></button>
+
+    
+</div>
+    
+<script>
+
+  function openFunction(){
+  
+  document.getElementById('rli').style.width = '250px';
+  
+  
+  }
+  
+  function closeFunction(){
+
+document.getElementById('rli').style.width = '0px';
+
+}
+  
+  
+  </script>
+<div class="pa">
+    <font size="5" face="Arial" color="white">
+<p>
+  النقل وسيلة الانتقال من مكان إلى اخر وقد استعمل الإنسان النقل منذ القدم حيث تطورت وسائل النقل عبر الزمن من النقل بواسطة الحيوان ومن ثم العربات التي تجرها الحيوانات حتى القطارات والسفن والمركبات ذات المحركات وصولاً إلى وسائل النقل الحديثة مثل الطائرات والصواريخ والغواصات.
+
+أنواع وسائل النقل
+توجد ثلاثة أنواع رئيسية لها: البري، المائي والجوي. يعتمد النقل البري على مركبات ذات عجلات وخصوصا السيارات والشاحنات والحافلات والقطارات أما السفن والقوارب والبواخر فهي أهم المركبات المائية وكما يعتمد النقل الجوي على الطائرات بصورة كلية.
+
+تواريخ مهمة في وسائل النقل
+حوالي عام 5000 ق.م بدأ الناس يستخدمون الحمير والثيران كحيوانات تحميل.
+3500 ق.م بنى سكان بلاد الرافدين أولى المركبات ذات العجلات.
+3200 ق.م اخترع المصريون الأشرعة وصنعوا أول مركبة شراعية.
+من القرن الرابع قبل الميلاد إلى القرن الثالث الميلادي أنشأ الرومان أول شبكة موسعة من الطرق المعبدة.
+القرن التاسع الميلادي ظهر طوق رقبة الحصان الصلب في أوروبا.
+القرن الثاني عشر الميلادي ابتكر صانعوا العربات في أوروبا أولى المركبات التي تجرها الخيل.
+القرن الخامس عشر الميلادي ساعدت التحسينات في بناء السفن على جعل الرحلات الطويلة عبر المحيطات ممكنة.
+ستينات القرن السابع عشر الميلادي افتتح في باريس أول خط عربات داخل المدينة.
+القرن الثامن عشر الميلادي طور المخترعون البريطانيون المحرك البخاري.
+1807م بدأ أول خط سفن بخارية ناجح تجاريا" في الولايات المتحدة الأمريكية.
+1825م بدأ أول خط حديدي بخاري ناجح في إنجلترا.
+ثمانينات القرن التاسع عشر الميلادي صنع الألمان أولى المركبات ذات المحركات التي تعمل بالبترول واستخدموها لتشغيل مركبات ذات عجلات.
+تسعينات القرن التاسع عشر الميلادي صنع المهندسون الفرنسيون أولى المركبات ذات المحركات التي تعمل بالبترول وبأجسام سيارات.
+<br><br><img src="transport.jpg" alt="">
+</p>
+
+
+
+
+
+
+
+
+
+</font>
+</div>
+
+
+<div class="foot">
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

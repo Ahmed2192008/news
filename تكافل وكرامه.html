@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="Ar">
+<head>  <link rel="icon" type="image/x-icon" href="logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تكافل وكرامه</title>
+    
+</head>
+<style>
+    ::-webkit-scrollbar{
+        width: 20px;
+      }
+      
+      ::-webkit-scrollbar-track{
+        background: #62077e;
+      }
+      
+      ::-webkit-scrollbar-thumb{
+        
+        background: #8708ad;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover{
+        background: #56056e;
+      }
+      
+      body{
+        padding: 5px;
+      background-color: #1c1c1c;
+      }
+      
+    
+    .head{
+        height: 25%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        right: 0%;
+        background-color: #ffffff;
+        
+    }
+    h1{
+        color: #56056e;
+    }
+    button{
+        border-bottom: 5px #1c1c1c solid;
+        
+        width: 100%;
+    }
+    button:hover{
+        background-color: rgb(211, 191, 211);
+    }
+    .se{
+        width: 50%;
+        height: 25%;
+        position: absolute;
+        left: 24.5%;
+        top: 10%;
+        background-color: #56056e;
+        color: #ffffff;
+    
+        border: 0.1cm #810ba5 solid;
+    
+    }
+    
+    .rli{
+      width: 25%;
+      position: absolute;
+      right: 0%;
+      top: 26%;
+
+      background-color: aliceblue;
+    }
+    
+    .sb{
+        width: 2cm;
+        height: 25%;
+        position: absolute;
+        left: 18%;
+        top: 10%;
+        background-color: #56056e;
+        color: #ffffff;
+    }
+    
+    .sb:hover{
+        background-color: #7e2979;
+    }
+    
+    p{
+      margin-right: 10px;
+      margin-left: 10px;
+      
+    }
+    
+    .pa{
+            height: auto;
+      width: 65%;
+      position: absolute;
+      top: 30%;
+      left: 0%;
+
+      margin-left: 5%;
+      border-radius: 1cm;
+      background-color: #2a2a2b;
+}
+    
+    a{
+      color: #da6fd2;
+    }
+    
+    .address{
+    position: absolute;
+      top: 10px;
+      right: 5px;
+    
+    }
+
+.con{
+  width: 40px;
+  height: 40px;
+  
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  display: none;
+}
+.one{
+  width: 85%;
+  height: 3px;
+  border: 1px  #8708ad solid;
+  border-radius: 20%;
+  background-color:  #8708ad;
+  margin-top: 10%;
+}
+
+.one:hover{
+  background-color: #56056e;
+}
+
+
+
+              .two{
+  width: 85%;
+  height: 3px;
+  border: 1px  #ffffff solid;
+  border-radius: 20%;
+  background-color:  #fdfdfd;
+  margin-top: 10%;
+
+}
+
+.first{
+  background-color: rgb(211, 191, 211);
+}
+.first:hover{
+  background-color: rgb(211, 191, 211);
+}
+img{
+  width: 99%;
+}
+    @media screen and (max-width:400px){
+     
+      .rli{
+                position: fixed;
+                right: 35%;
+                top: 1%;
+               
+                height: 100%;
+                width: 0px;
+                background-color: #56056e;
+                z-index: 1;
+                padding-top: 40px;
+                overflow: scroll;
+                display: block;
+                transition: all 0.3s;
+              }
+     
+     
+      button{
+        border: 0cm;
+        margin-bottom: 2.5px;
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+    }
+
+
+    .con{
+      display: block;
+    }
+    .pa{
+      height: auto;
+      width: 90%;
+      margin-top: 0%;
+      margin-left: 5%;
+      border-radius: 1cm;
+      background-color: #2a2a2b;
+}
+
+    }
+
+
+
+    
+    @media screen and (min-width:401px){
+       
+    .pa{
+            height: auto;
+      width: 65%;
+      position: absolute;
+      top: 30%;
+      left: 0%;
+
+      margin-left: 5%;
+      border-radius: 1cm;
+      background-color: #2a2a2b;
+}
+button{
+        border-bottom: 5px #1c1c1c solid;
+        
+        width: 100%;
+    }
+    }
+
+
+
+
+
+
+    </style>
+
+<body dir="rtl">
+
+<div class="head">
+    <font size="6" face="Arial" color="#56056e">
+    <label class="address">جهود الدوله فى <br>تكافل وكرامه</label>
+
+      <div class="con" onclick="openFunction()">
+        <div class="one" onclick="openFunction()"></div>
+        <div class="one" onclick="openFunction()"></div>
+        <div class="one" onclick="openFunction()"></div>
+      </div>
+
+
+ </font>
+</div>
+
+<div class="rli" id="rli">
+  <div class="con" onclick="closeFunction()">
+    <div class="two" onclick="closeFunction()"></div>
+    <div class="two" onclick="closeFunction()"></div>
+    <div class="two" onclick="closeFunction()"></div>
+  </div>
+    
+    <a href="index.html"><button><h1>الصفحه الرئيسيه</h1></button></a><br>   
+    
+    <a href="التعامل فى الازدحام الحضرى.html"><button><h1>جهود الدوله فى التعامل مع الازدحام الحضرى</h1></button></a><br>
+    <a href="تحسين استخدام الطاقه البديله.html"><button><h1>تحسين استخدام الطاقه البديله</h1></button></a><br>
+    <a href="الاحياء الريفى المصرى.html"><button><h1>الاحياء الريفى المصرى</h1></button></a><br>
+    
+    <a href="معالجه وتقليل التلوث.html"><button><h1>معالجه وتقليل التلوث</h1></button></a><br>
+    <a href="التضامن الاجتماعى.html"><button><h1>التضامن الاجتماعى</h1></button></a><br>
+    <a href="التغيرات المناخيه.html"><button><h1>التغيرات المناخيه</h1></button></a><br>
+    <a href="قطاع الكهرباء.html"><button><h1>قطاع الكهرباء</h1></button></a><br>
+
+    
+    <a href="البترول.html"><button><h1>قطاع البترول</h1></button></a><br>
+    <a href="الصحه.html"><button><h1>الصحه</h1></button></a><br>
+    <a href="النقل.html"><button><h1>النقل</h1></a></button>
+
+    
+</div>
+    
+<script>
+
+  function openFunction(){
+  
+  document.getElementById('rli').style.width = '250px';
+  
+  
+  }
+  
+  function closeFunction(){
+
+document.getElementById('rli').style.width = '0px';
+
+}
+  
+  
+  </script>
+<div class="pa">
+    <font size="5" face="Arial" color="white">
+<p>
+  تعريف المبادرة:
+
+برنامج تكافل وكرامة هو برنامج التحويلات النقدية المشروطة الذي أطلقته وزارة التضامن الاجتماعي تحت مظلة تطوير شبكات الأمان الاجتماعي.
+
+هو برنامج للمساعدات النقدية المشروطة يقدم مساعدة للأسر الفقيرة والأكثر احتياجا بجمهورية مصر العربية، وذلك عن طريق الاستهداف الموضوعي للأسر التي لديها مؤشرات اقتصادية واجتماعية منخفضة تحول دون إشباع احتياجاتها الأساسية وكفالة حقوق أطفالها الصحية والتعليمية، هذا بالإضافة إلى مد شبكة الحماية لتشمل الفئات التي ليس لديها القدرة على العمل والإنتاج مثل كبار السن (65 سنة فأكثر) أو من هم لديهم عجز كلى أو إعاقة.
+<br><br><img src="Takaful and dignity.jpg" alt=""><br><br>
+
+الفئة المستحقة:
+<br> - الأسرة
+<br> - الطفل
+<br> - المرأة
+<br> - ذوي الإعاقة
+<br> - المسنين
+<br>- الشباب
+<br><br>
+ 
+
+الشروط والأحكام:
+<br><br> 1- أن لا يكون الزوج/الزوجه او المسن/ العاجز يعمل بالحكومة أو القطاع العام او القطاع الخاص بأجر تأمينى أكثر من 400 جنيه او ان يتقاضى معاش تأمينى أو مساعدة ضمانية
+<br> 2- أن تكون الأسرة المتقدمة لبرنامج "تكافل" لديها أبناء من حديثي الولادة حتى سن الثمانية عشر عاما، على أن يكون الأبناء من سن السادسة لسن الثمانية عشر بمراحل التعليم المختلفة
+<br> 3- تقديم كافة المستندات الداعمة واللازمة للتقدم مثل صور بطاقات رقم قومي سارية وصور شهادات ميلاد وصور وثائق الزواج أو الطلاق أو الوفاة او الهجر وصور إيصالات استهلاك كهرباء وشهادة قومسيون طبي رسمية تبين درجة إعاقة تبدأ من درجة 50 أو غيرها من الوثائق المطلوبة.
+<br> 4- أن يكون الأفراد المتقدمين لبرنامج "كرامة" من المسنين بعمر يبدأ من 65 عام أو من أصحاب عجز أومرض مزمن يحول بينه وبين العمل أو ينقص من قدرته على العمل ويثبت المرض أو الإعاقة بالفحص الطبي، أو من الأيتام الذي لاينالون الرعاية من الأب أوالأم بل من الأقارب من الدرجة الثانية أو أبعد من ذلك.
+<br><br>
+ 
+
+إجراءات الإشتراك بالبرنامج:
+التوجه للوحدة الاجتماعية التابعة لمحل سكن المتقدم المستندات المطلوبة:
+<br><br> - صور بطاقة الرقم القومى سارية وعلى العنوان الحالى للأفراد 18 سنة فأكثر.
+<br> - صور قسيمة الزواج أو الطلاق.
+<br> - صور شهادة الميلاد لجميع أفراد الأسرة مميكنة (شهادة كمبيوتر) للأفراد أقل من 18 سنة.
+<br> - صورة من بطاقة التموين المميكنة مسجل عليها اسم مكتب التموين إن وجدت.
+<br> - قيد مدرسى لجميع الأطفال من 6 إلى 18 سنة وقيد طالب للمقيدين جامعياً.
+<br> - كود كشف الإعاقة من اللجان الطبية فى حالة المرض المزمن والإعاقة.
+<br> - صورة شهادة وفاة الزوج / الزوجة للأرامل.
+<br> - صورة شهادة الهجر أو ما يدل على الانفصال.
+<br> - صورة إقرار الوصاية للأيتام.
+<br> - صورة شهادة السجن لحالات سجن الاب او الام.
+<br><br>
+ 
+
+الأهداف:
+معايير القبول بالبرنامج:
+<br> 1- استيفاء كافة بيانات التقدم للبرنامج بتفاصيل الإستمارة الدالة على الحالة الاجتماعية للأسرة.
+<br> 2- أن تكون حالة الأسر أو الأفراد المتقدمة تحت خط الفقر بناء على المعادلة الإحصائية المقررة .
+<br> 3- عدم الحصول علي أي دخل شهري ثابت أو تقاضي أي معاش تأميني أو مساعدة ضمان اجتماعي شهرية .
+<br><br>
+<img src="Takaful and dignity2.jpg" alt=""> 
+<br><br>
+معايير الاقصاء من البرنامج:
+<br> 1.  القيد بقوة عمل القوات المسلحة أو الشرطة أو تقاضى معاش من تلك الجهات.
+<br> 2.  حيازة أرض زراعية أكبر من فدان .
+<br> 3. امتلاك عقارات غير محل السكن بغرض الاستثمار.
+<br> 4.  امتلاك جرار زراعي أو سيارة اجرة أو نقل أو سيارة ملاكى موديل صنع بعد عام  200
+<br> 5. امتلاك 3 رؤوس ماشية أو أكثر من أجل التجارة .
+<br> 6. العمل في القطاع الخاص (بتأمين أو بدون تأمين سواء بالمكافأة  الشاملة أو غيرها) .
+<br> 7. العمل بالحكومة (بتأمين أو بدون تأمين سواء بالمكافأة الشاملة أو غيرها) .
+<br> 8. التواجد/العمل خارج البلاد وقت الإستعلام (إقامة مستقرة داخل البلاد لمدة 6 أشهر سابقة عن تاريخ التقدم للبرنامج).
+<br> 9. ملكية عمل خاص/شخصي.
+<br> 10. وجود الأبناء في مدارس خاصة تزيد المصروفات السنوية عن الفان جنيه مصري للطفل الواحد .
+<br><br>
+ 
+
+شروط استمرار المساعدة خلال مدة الاستحقاق :
+<br><br> 1- حضور أبناء الأسر المستفيدة من "تكافل" للتعليم بنسبة حضور لا تقل عن 80% شهريا.
+<br> 2- حضور الأم لثلاث جلسات توعية صحية بحد أدني لمتابعة برامج الصحة الأولية والنمو ومتابعة الحمل وإعطاء الأطفال كل جرعات برامج التطعيمات على مدار كافة المراحل العمرية حتى 6 سنوات .
+</p>
+
+
+
+
+
+
+
+
+
+</font>
+</div>
+
+
+<div class="foot">
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

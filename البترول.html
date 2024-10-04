@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="Ar">
+<head>  <link rel="icon" type="image/x-icon" href="logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قطاع البترول</title>
+    
+</head>
+<style>
+    ::-webkit-scrollbar{
+        width: 20px;
+      }
+      
+      ::-webkit-scrollbar-track{
+        background: #62077e;
+      }
+      
+      ::-webkit-scrollbar-thumb{
+        
+        background: #8708ad;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover{
+        background: #56056e;
+      }
+      
+      body{
+        padding: 5px;
+      background-color: #1c1c1c;
+      }
+      
+    
+    .head{
+        height: 25%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        right: 0%;
+        background-color: #ffffff;
+        
+    }
+    h1{
+        color: #56056e;
+    }
+    button{
+        border-bottom: 5px #1c1c1c solid;
+        
+        width: 100%;
+    }
+    button:hover{
+        background-color: rgb(211, 191, 211);
+    }
+    .se{
+        width: 50%;
+        height: 25%;
+        position: absolute;
+        left: 24.5%;
+        top: 10%;
+        background-color: #56056e;
+        color: #ffffff;
+    
+        border: 0.1cm #810ba5 solid;
+    
+    }
+    
+    .rli{
+      width: 25%;
+      position: absolute;
+      right: 0%;
+      top: 26%;
+
+      background-color: aliceblue;
+    }
+    
+    .sb{
+        width: 2cm;
+        height: 25%;
+        position: absolute;
+        left: 18%;
+        top: 10%;
+        background-color: #56056e;
+        color: #ffffff;
+    }
+    
+    .sb:hover{
+        background-color: #7e2979;
+    }
+    
+    p{
+      margin-right: 10px;
+      margin-left: 10px;
+      
+    }
+    
+    .pa{
+            height: auto;
+      width: 65%;
+      position: absolute;
+      top: 30%;
+      left: 0%;
+
+      margin-left: 5%;
+      border-radius: 1cm;
+      background-color: #2a2a2b;
+}
+    
+    a{
+      color: #da6fd2;
+    }
+    
+    .address{
+    position: absolute;
+      top: 10px;
+      right: 5px;
+    
+    }
+
+.con{
+  width: 40px;
+  height: 40px;
+  
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  display: none;
+}
+.one{
+  width: 85%;
+  height: 3px;
+  border: 1px  #8708ad solid;
+  border-radius: 20%;
+  background-color:  #8708ad;
+  margin-top: 10%;
+}
+
+.one:hover{
+  background-color: #56056e;
+}
+
+
+
+              .two{
+  width: 85%;
+  height: 3px;
+  border: 1px  #ffffff solid;
+  border-radius: 20%;
+  background-color:  #fdfdfd;
+  margin-top: 10%;
+
+}
+
+.first{
+  background-color: rgb(211, 191, 211);
+}
+.first:hover{
+  background-color: rgb(211, 191, 211);
+}
+
+img{
+  width: 99%;
+}
+    @media screen and (max-width:400px){
+     
+      .rli{
+                position: fixed;
+                right: 35%;
+                top: 1%;
+               
+                height: 100%;
+                width: 0px;
+                background-color: #56056e;
+                z-index: 1;
+                padding-top: 40px;
+                overflow: scroll;
+                display: block;
+                transition: all 0.3s;
+              }
+     
+     
+      button{
+        border: 0cm;
+        margin-bottom: 2.5px;
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+    }
+
+
+    .con{
+      display: block;
+    }
+    .pa{
+      height: auto;
+      width: 90%;
+      margin-top: 0%;
+      margin-left: 5%;
+      border-radius: 1cm;
+      background-color: #2a2a2b;
+}
+
+    }
+
+
+
+    
+    @media screen and (min-width:401px){
+       
+    .pa{
+            height: auto;
+      width: 65%;
+      position: absolute;
+      top: 30%;
+      left: 0%;
+
+      margin-left: 5%;
+      border-radius: 1cm;
+      background-color: #2a2a2b;
+}
+button{
+        border-bottom: 5px #1c1c1c solid;
+        
+        width: 100%;
+    }
+    }
+
+
+
+
+
+
+    </style>
+
+<body dir="rtl">
+
+<div class="head">
+    <font size="6" face="Arial" color="#56056e">
+    <label class="address">جهود الدوله فى <br>تنميه قطاع البترول</label>
+
+      <div class="con" onclick="openFunction()">
+        <div class="one" onclick="openFunction()"></div>
+        <div class="one" onclick="openFunction()"></div>
+        <div class="one" onclick="openFunction()"></div>
+      </div>
+
+
+ </font>
+</div>
+
+<div class="rli" id="rli">
+  <div class="con" onclick="closeFunction()">
+    <div class="two" onclick="closeFunction()"></div>
+    <div class="two" onclick="closeFunction()"></div>
+    <div class="two" onclick="closeFunction()"></div>
+  </div>
+    
+
+    <a href="index.html"><button><h1>الصفحه الرئيسيه</h1></button></a><br>   
+    
+    <a href="التعامل فى الازدحام الحضرى.html"><button><h1>جهود الدوله فى التعامل مع الازدحام الحضرى</h1></button></a><br>
+    <a href="تحسين استخدام الطاقه البديله.html"><button><h1>تحسين استخدام الطاقه البديله</h1></button></a><br>
+    <a href="الاحياء الريفى المصرى.html"><button><h1>الاحياء الريفى المصرى</h1></button></a><br>
+    
+    <a href="معالجه وتقليل التلوث.html"><button><h1>معالجه وتقليل التلوث</h1></button></a><br>
+    <a href="التضامن الاجتماعى.html"><button><h1>التضامن الاجتماعى</h1></button></a><br>
+    <a href="التغيرات المناخيه.html"><button><h1>التغيرات المناخيه</h1></button></a><br>
+    <a href="قطاع الكهرباء.html"><button><h1>قطاع الكهرباء</h1></button></a><br>
+
+    
+    <a href="الصحه.html"><button><h1>قطاع الصحه</h1></button></a><br>
+    <a href="تكافل وكرامه.html"><button><h1>التكافل والكرامه</h1></button></a><br>
+    <a href="النقل.html"><button><h1>النقل</h1></a></button>
+
+    
+</div>
+    
+<script>
+
+  function openFunction(){
+  
+  document.getElementById('rli').style.width = '250px';
+  
+  
+  }
+  
+  function closeFunction(){
+
+document.getElementById('rli').style.width = '0px';
+
+}
+  
+  
+  </script>
+<div class="pa">
+    <font size="5" face="Arial" color="white">
+<p>
+  أنشئت أول وزارة مستقلة للبترول في مصر في مارس 1973 لإدارة الدور السياسى للبترول قبل حرب 1973 وفي ضوء الأهمية الاستراتيجية لوجود الوزارة كجهاز سياسى يضع الاستراتيجيات البترولية العامة على أسس جديدة تتلائم مع مقتضيات المرحلة، وتأتى على قائمة أولوياتها، توفير احتياجات السوق المحلى من المنتجات البترولية والبتروكيماوية والثروات المعدنية والمساهمة في تحقيق معدلات النمو المستهدفة للاقتصاد القومى.
+  <br><img src="petroleum.jpg" alt="">
+  اختصاصات الوزارة
+تقوم وزارة البترول والثروة المعدنية برسم السياسات ووضع الاستراتيجيات لقطاعي البترول والثروة المعدنية بكياناته الخمسة لتنفيذها.
+ترتكز السياسة البترولية على زيادة الاحتياطيات والإنتاج من الزيت الخام والغاز الطبيعي من خلال تكثيف أعمال البحث والاستكشاف .
+العمل على تطوير وبناء الكوادر البشرية القادرة على تحمل المسئوليات وذلك في إطار البرنامج الشامل الذي يتم تنفيذه حالياً لتطوير وتحديث قطاع البترول والثروة المعدنية من خلال 7 برامج .
+العمل على تحويل مصر لمركز إقليمي لتداول وتجارة الغاز والبترول.
+الرؤية
+تحقيق الاستفادة الاقتصادية المثلى من كافة الإمكانيات والثروات الطبيعية، للمساهمة في التنمية المستدامة لمصر.
+تحويل مصر لمركز إقليمي لتجارة وتداول البترول والغاز.
+أن يصبح قطاع البترول نموذجاً يحتذى به لباقي قطاعات الدولة في التحديث والتطوير.
+الاحتفاظ بالقيم الجوهرية للقطاع وهي: معايير السلامة، الابتكار، الالتزام بأخلاقيات العمل، الشفافية والكفاءة.
+الأهداف الاستراتيجية
+الوفاء باحتياجات السوق المحلى من المنتجات البترولية والبتروكيماوية والثروات المعدنية وتحقيق معدلات النمو المستهدفة للاقتصاد القومي.
+تأمين إمدادات البترول والغاز الطبيعي من خلال التوسع في أنشطة البحث والاستكشاف وتنويع المصادر والعمل على تعديل مزيج الطاقة.
+تحقيق أعلى قيمة مضافة من الثروات الطبيعية.
+بناء كوادر بشرية وطنية ذات كفاءة عالية.
+الحفاظ على معايير البيئة والتنمية المستدامة.
+تحويل مصر لمركز إقليمي لتداول وتجارة الغاز والبترول.
+تطوير وتحديث قطاع البترول ليواكب متطلبات العصر.
+الجهات التابعة
+الهيئات
+الهيئة المصرية العامة للبترول "EGPC".
+الهيئة المصرية العامة للثروة المعدنية "EGSMA".
+الشركات القابضة
+المصرية القابضة للغازات الطبيعية "EGAS".
+المصرية القابضة للبتروكيماويات "ECHEM".
+جنوب الوادي المصرية القابضة للبترول "GANOPE".
+الأجهزة
+جهاز تنظيم أنشطة سوق الغاز.
+المعاهد والمراكز
+معهد بحوث البترول.
+مركز معلومات قطاع البترول.
+المركز القومى للتحكم في الشبكة القومية للغازات الطبيعية - تقوم على تشغيله شركة جاسكو.
+الهيكل التنظيمي
+وكالة الوزارة للشئون الإدارية والقانونية ويتبعها:
+<br><br> 1- الأمانة العامة
+<br> 2- الإدارة العامة للتنظيم والعلاقات الصناعية
+<br> 3- الإدارة العامة للشون القانونية
+<br> 4- الإدارة العامة للعلاقات العامة
+<br> 5- إدارة الأمن والدفاع المدني
+<br><br>
+وكالة الوزارة للشئون المالية والاقتصادية ويتبعها:
+<br><br> 1- الإدارة العامة لشئون الموازنات التخطيطية والميزانيات
+<br> 2- الإدارة العامة للشئون الاقتصادية والتجارية
+<br> 3- الإدارة العامة للبحوث والإحصاء
+<br><br>
+وكالة الوزارة لشئون التخطيط والمتابعة الفنية ويتبعها:
+1- الإدارة العامة لشئون البترول
+2- الإدارة العامة للتصنيع والبتروكيماويات
+3- الإدارة العامة للتطور التكنولوجي
+
+وكالة الوزارة لشئون العلاقات الدولية والعربية ويتبعها:
+<br><br> 1- الإدارة العامة لشئون المنظمات الدولية والعربية
+<br> 2- الإدارة العامة للسياسات البترولية
+<br> 3- إدارة المعلومات والوثائق
+<br><br>
+الوزراء
+طالع أيضًا: قائمة وزراء البترول والثروة المعدنية (مصر)
+طارق الملا (سبتمبر 2015 - حتى الآن)
+شريف إسماعيل (يوليو 2013 - سبتمبر 2015)
+شريف هدارة (مايو 2013 - يوليو 2013)
+أسامة كمال (2012 - مايو 2013)
+عبد الله غراب (مارس 2011 - 2012)
+محمود لطيف (فبراير 2011 - مارس 2011)
+سامح فهمي (أكتوبر 1999 - فبراير 2011)
+
+
+
+
+</p>
+
+
+
+
+
+
+
+
+
+</font>
+</div>
+
+
+<div class="foot">
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

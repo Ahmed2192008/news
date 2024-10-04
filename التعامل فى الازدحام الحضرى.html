@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="Ar">
+<head>  <link rel="icon" type="image/x-icon" href="logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جهود الدوله فى التعامل مع الازدحام الحضرى</title>
+    
+</head>
+<style>
+    ::-webkit-scrollbar{
+        width: 20px;
+      }
+      
+      ::-webkit-scrollbar-track{
+        background: #62077e;
+      }
+      
+      ::-webkit-scrollbar-thumb{
+        
+        background: #8708ad;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover{
+        background: #56056e;
+      }
+      
+      body{
+        padding: 5px;
+      background-color: #1c1c1c;
+      }
+      
+    
+    .head{
+        height: 25%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        right: 0%;
+        background-color: #ffffff;
+        
+    }
+    h1{
+        color: #56056e;
+    }
+    button{
+        border-bottom: 5px #1c1c1c solid;
+        
+        width: 100%;
+    }
+    button:hover{
+        background-color: rgb(211, 191, 211);
+    }
+    .se{
+        width: 50%;
+        height: 25%;
+        position: absolute;
+        left: 24.5%;
+        top: 10%;
+        background-color: #56056e;
+        color: #ffffff;
+    
+        border: 0.1cm #810ba5 solid;
+    
+    }
+    
+    .rli{
+      width: 25%;
+      position: absolute;
+      right: 0%;
+      top: 26%;
+
+      background-color: aliceblue;
+    }
+    
+    .sb{
+        width: 2cm;
+        height: 25%;
+        position: absolute;
+        left: 18%;
+        top: 10%;
+        background-color: #56056e;
+        color: #ffffff;
+    }
+    
+    .sb:hover{
+        background-color: #7e2979;
+    }
+    
+    p{
+      margin-right: 10px;
+      margin-left: 10px;
+      
+    }
+    
+    .pa{
+            height: auto;
+      width: 65%;
+      position: absolute;
+      top: 30%;
+      left: 0%;
+
+      margin-left: 5%;
+      border-radius: 1cm;
+      background-color: #2a2a2b;
+}
+    
+    a{
+      color: #da6fd2;
+    }
+    
+    .address{
+    position: absolute;
+      top: 10px;
+      right: 5px;
+    
+    }
+
+.con{
+  width: 40px;
+  height: 40px;
+  
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  display: none;
+}
+.one{
+  width: 85%;
+  height: 3px;
+  border: 1px  #8708ad solid;
+  border-radius: 20%;
+  background-color:  #8708ad;
+  margin-top: 10%;
+}
+
+.one:hover{
+  background-color: #56056e;
+}
+
+
+
+              .two{
+  width: 85%;
+  height: 3px;
+  border: 1px  #ffffff solid;
+  border-radius: 20%;
+  background-color:  #fdfdfd;
+  margin-top: 10%;
+
+}
+
+.first{
+  background-color: rgb(211, 191, 211);
+}
+.first:hover{
+  background-color: rgb(211, 191, 211);
+}
+
+img{
+  width: 99%;
+}
+    @media screen and (max-width:400px){
+     
+      .rli{
+                position: fixed;
+                right: 35%;
+                top: 1%;
+               
+                height: 100%;
+                width: 0px;
+                background-color: #56056e;
+                z-index: 1;
+                padding-top: 40px;
+                overflow: scroll;
+                display: block;
+                transition: all 0.3s;
+              }
+     
+     
+      button{
+        border: 0cm;
+        margin-bottom: 2.5px;
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+    }
+
+
+    .con{
+      display: block;
+    }
+    .pa{
+      height: auto;
+      width: 90%;
+      margin-top: 0%;
+      margin-left: 5%;
+      border-radius: 1cm;
+      background-color: #2a2a2b;
+}
+
+    }
+
+
+
+    
+    @media screen and (min-width:401px){
+       
+    .pa{
+            height: auto;
+      width: 65%;
+      position: absolute;
+      top: 30%;
+      left: 0%;
+
+      margin-left: 5%;
+      border-radius: 1cm;
+      background-color: #2a2a2b;
+}
+button{
+        border-bottom: 5px #1c1c1c solid;
+        
+        width: 100%;
+    }
+    }
+
+
+
+
+
+
+    </style>
+
+<body dir="rtl">
+
+<div class="head">
+    <font size="6" face="Arial" color="#56056e">
+    <label class="address">جهود الدوله فى <br>التعامل مع الازدحام الحضرى</label>
+
+      <div class="con" onclick="openFunction()">
+        <div class="one" onclick="openFunction()"></div>
+        <div class="one" onclick="openFunction()"></div>
+        <div class="one" onclick="openFunction()"></div>
+      </div>
+
+
+ </font>
+</div>
+
+<div class="rli" id="rli">
+  <div class="con" onclick="closeFunction()">
+    <div class="two" onclick="closeFunction()"></div>
+    <div class="two" onclick="closeFunction()"></div>
+    <div class="two" onclick="closeFunction()"></div>
+  </div>
+    
+    <a href="index.html"><button><h1>الصفحه الرئيسيه</h1></button></a><br>   
+    
+    <a href="تحسين استخدام الطاقه البديله.html"><button><h1>تحسين استخدام الطاقه البديله</h1></button></a><br>
+    <a href="الاحياء الريفى المصرى.html"><button><h1>الاحياء الريفى المصرى</h1></button></a><br>
+    <a href="معالجه وتقليل التلوث.html"><button><h1>معالجه وتقليل التلوث</h1></button></a><br>
+    
+    <a href="التضامن الاجتماعى.html"><button><h1>التضامن الاجتماعى</h1></button></a><br>
+    <a href="التغيرات المناخيه.html"><button><h1>التغير المناخى</h1></button></a><br>
+    <a href="البترول.html"><button><h1>قطاع البترول</h1></button></a><br>
+    <a href="قطاع الكهرباء.html"><button><h1>قطاع الكهرباء</h1></button></a><br>
+
+    
+    <a href="الصحه.html"><button><h1>قطاع الصحه</h1></button></a><br>
+    <a href="تكافل وكرامه.html"><button><h1>التكافل والكرامه</h1></button></a><br>
+    <a href="النقل.html"><button><h1>النقل</h1></a></button>
+
+    
+</div>
+    
+<script>
+
+  function openFunction(){
+  
+  document.getElementById('rli').style.width = '250px';
+  
+  
+  }
+  
+  function closeFunction(){
+
+document.getElementById('rli').style.width = '0px';
+
+}
+  
+  
+  </script>
+<div class="pa">
+    <font size="5" face="Arial" color="white">
+<p>الظاهرة<br>
+  «تأثير زحمة » هو التباطؤ في تدفق حركة المرور الكثيفة على الطريق بين مركزين حضريين كبيرين. هذه ظاهرة غريبة من الحركة بشكل خاص وخاصة الطرق السريعة. فمن الملاحظ حدوث تباطؤ تدريجي على أساس منتظم بين جهتين. في رحلة نموذجية من 200 كم من الممكن أن يبدو أن كل شيء يسير على ما يرام وفجأة يتكون تباطؤ سريع أو بطيء، والتي يمكن ان تسبب في الاغلاق الكامل لاتجاهات الطرق السريعة. ثم تبدأ تدريجيا جميع المركبات للتعجيل بالسرعة. وفي بعض الأحيان يصبح تدفق حركة المرور لايتجاوز أكثر من 70 كيلومترا إلى الانتعاش بعد التوقف التام. بعض السائقين يحاولون استعادة سرعات المركبات أسرع من غيرهم، وبالتالي فإنها تسبب الانكماش من جديد، حتى التوقف النهائي وفي كثير من الأحيان أقل من 5 كم من الأولى.
+  
+  قد تحدث هذه الظاهرة توقف كامل للمركبات أكثر من مرة قبل وصولها إلى وجهتها، ومن هنا جاءت تسميته من تأثير جنزرة. ونتيجة لهذا تكون رحلة أطول حيث يتطلب زيادة من 20-30 دقيقة لعبور مسار 250 كم بالإضافة للتعب المتعلق بالتركيزأكثر من المعتاد أو اللازم. وتحدث ظاهرة أخرى مشابهة إلى حد ما أيضا في المناطق الحضرية خلال ساعات الذروة، ويطلق عليه تأثير الأكورديون، وهو عادة ظرفية وغير متكررة.
+  
+  «تأثير الأكورديون» هو تباطؤ في تدفق حركة المرور الكثيفة على الطرق الحضرية. وكثيرا ما لوحظ خلال ساعات الذروة. على عكس تأثير جنزرة يحدث فقط في الرحلات القصيرة في المناطق الحضرية. وكثيرا ما يستخدم هذا المصطلح من قبل مُدَوِِّنو ْوَقَائِع حركة المرور من المراكز الرئيسية.
+  <br><br><img src="crowded.jpg" alt=""><br><br>
+  النتائج
+  <br>
+  تأخر الموظفين والعاملين عن أعمالهم وتأخر الطلاب عن دروسهم ومدارسهم وكذلك كثرة الحوادث في هذه الطرق المزدحمة
+  <br><br><img src="late.jpg" alt=""><br><br>
+  الأسباب
+  <br>
+  عموما لعدة عقود عدد ومدى التكدس المروري يتزايد، ولا سيما في البلدان النامية.
+  
+  الأسباب كثيرة، أهمها
+  
+  الزيادة في حركة المرور للسيارات (التي هي نتيجة حتمية لزيادة عدد السكان عدد السيارات والمعدات).
+  سوء حالة البنية التحتية يؤدي لحالة الاحتقان
+  عدم وجود اعلام مسبق لمستخدمي الطريق بحالة حركة المرور (مما يقلل الزحام بفضل معلومات عن حركة المرور في الوقت الحقيقي).
+  ان تقسيم سلطات إدارة حركة المرور في عدة إدارات (الأشغال العمومية، البلدية، الأمن، النقل...) في بعض المناطق يصبح غير فعال في بعض الأحيان،
+  أسلوب القيادة العدوانية قد يكون من عوامل خلق الزحام.
+  استخدام النقل الفردي بدلا من النقل الجماعي
+  <br><br><img src="late_re.jpg" alt=""><br><br>
+  حلول مقترحة للتقليل من مشكلة الازدحام المروري
+  <br>
+  توجد العديد من الطرق لمكافحة الاختناقات المرورية، فإنه يمكن سرد ما يلي:
+  تحسين تدفق حركة المرور، وخاصة تأشير أفضل للطريق
+  تنظيم الاستخدام عن طريق الاتاوات (رسوم البنية التحتية أو رسوم الازدحام)
+  ضبط السرعة (جزء من تحسين تدفق حركة المرور)
+  إدخال نظام النقل الذكي
+  الوقاية من الحوادث
+  تحسين وتعزيز وسائل النقل العام
+  تشجيع الاستخدام الجماعي للسيارات للتنقل من وإلى مكان العمل
+  إنشاء الطرق الجديدة (الأمر الذي قد يجعل ذلك فقط نقل للمشكلة المنبع و / أو المصب).
+  تحسين وتعزيز وسائل النقل العام
+  تشجيع استخدام الجماعي السيارات للتنقل إلى مكان العمل
+  استعادة الخدمات والوظائف والمحلات التجارية، والمساحات الخضراء المجاورة، للحد من الحاجة إلى السفر بمحركات.
+  تشجيع ركوب الدراجات، مع إنشاء مسارات الدراجة، ونقاط التعليق، الخ.
+  مراجعة جداول عمل المكاتب والشركات
+  تجنب السفر في الطقس العاصف
+  <br><br><img src="Bus-1024x603.jpg" alt=""><br><br>
+  الوقاية
+  <br>
+  الزحمة المرورية هي نتيجة انخفاض في تدفق حركة المرور. الانخفاض في تدفق يمكن أن يكون له مجموعة متنوعة من الأسباب «الخارجية» للمركبة. ويأتي هذا الانخفاض في بعض الأحيان بسبب سائق قرر تخفيض سرعة السيارة (مما يؤدى إلى الحد من التدفق). القيادة القريبة جدا من السيارة التي تسبقنا يمكن أن تسبب تخفيضا طوعيا لدينا في السرعة لأن السائق على بينة من صعوبة الرد إذا كان هناك شيء غير متوقع، الذي يسبب حدوث انخفاض في سرعة غير طوعي.
+  
+  وبالمثل، فرؤية اشتعال الاضواء الخلفية بغرض التوقف أمام سيارته غالبا ما يولد استعمال فرامله الخاصة وهلم جرا مع السيارة التي وراءنا، ومع جميع الآخرين...في حالة أن المركبات تسير متقاربة: المطلوب الكبح فوري من اجل عدم الدخول في السيارة التي امامنا
+  
+  الخيارات الرئيسية لتفادي الازدحام من دون سبب «خارجي» (حادث...) هي:
+  
+  القيادة بسرعة ثابتة قدر الإمكان (لتجنب إرسال إشارات الكبح المتكرر التي تتبعنا المركبات)
+  الحفاظ على مسافة رد فعل كافية بين سيارتنا والتي تسبقنا دون ان ترغمنا على الكبح (وهذه مسافة تمكن تقليل استعمال الكبح وخاصة الكبح الفوري.
+  تقليل عدد تغييرات المسارات غير الضرورية لضمان أن السيارة التي تسبقنا بعيدة بما فيه الكفاية لتجنب اجبارها على التوقف بسبب هذه التغييرات في المسارات
+    </p>
+
+
+
+
+
+
+
+
+
+</font>
+</div>
+
+
+<div class="foot">
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>
